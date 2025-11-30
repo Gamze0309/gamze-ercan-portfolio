@@ -1,4 +1,32 @@
+import { useState, useEffect } from "react";
+
 const Navbar = () => {
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    const container = document.getElementById("scroll-container");
+    if (!container) return;
+
+    const sections = ["information", "experience", "projects", "contact"];
+    const navbarOffset = 150;
+
+    const onScroll = () => {
+      const scrollPos = container.scrollTop + navbarOffset;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sections[i]);
+        if (el && el.offsetTop <= scrollPos) {
+          setActive(sections[i]);
+          return;
+        }
+        setActive("");
+      }
+    };
+
+    onScroll();
+    container.addEventListener("scroll", onScroll);
+    return () => container.removeEventListener("scroll", onScroll);
+  }, []);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -14,18 +42,38 @@ const Navbar = () => {
       >
         GAMZE
       </div>
-      <div className="flex gap-8">
-        <button
-          onClick={() => scrollToSection("introduction")}
-          className="text-lg text-dark hover:text-orange transition-colors"
-        >
-          Introduction
-        </button>
+      <div className="flex gap-6 md:gap-8">
         <button
           onClick={() => scrollToSection("information")}
-          className="text-lg text-dark hover:text-orange transition-colors"
+          className={`text-sm md:text-lg text-dark hover:text-orange transition-colors ${
+            active === "information" ? "border-b-2 border-orange" : ""
+          }`}
         >
           Information
+        </button>
+        <button
+          onClick={() => scrollToSection("experience")}
+          className={`text-sm md:text-lg text-dark hover:text-orange transition-colors ${
+            active === "experience" ? "border-b-2 border-orange" : ""
+          }`}
+        >
+          Experience
+        </button>
+        <button
+          onClick={() => scrollToSection("projects")}
+          className={`text-sm md:text-lg text-dark hover:text-orange transition-colors ${
+            active === "projects" ? "border-b-2 border-orange" : ""
+          }`}
+        >
+          Projects
+        </button>
+        <button
+          onClick={() => scrollToSection("contact")}
+          className={`text-sm md:text-lg text-dark hover:text-orange transition-colors ${
+            active === "contact" ? "border-b-2 border-orange" : ""
+          }`}
+        >
+          Contact
         </button>
       </div>
     </nav>
