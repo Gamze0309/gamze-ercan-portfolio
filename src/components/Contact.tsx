@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/envelope.json";
+import CustomButton from "./CustomButton";
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -73,17 +74,10 @@ const Contact = () => {
             <h3 className="text-lg md:text-xl font-bold text-dark mb-3 font-primary-family">
               Send me an email
             </h3>
-            <p className="text-dark/80 text-sm md:text-base leading-relaxed font-content-family">
+            <p className="text-dark/80 text-sm md:text-base leading-relaxed font-content-family mb-4">
               Prefer quick contact? Drop me a line and I’ll reply soon.
             </p>
-            <div className="mt-4">
-              <a
-                href="mailto:gamze@example.com"
-                className="inline-block bg-dark text-light px-4 py-2 rounded-md hover:bg-orange hover:text-dark transition-colors font-primary-family"
-              >
-                Send Email
-              </a>
-            </div>
+            <CustomButton text="Send Email" link="mailto:gamze@example.com" />
           </div>
         </div>
       </div>

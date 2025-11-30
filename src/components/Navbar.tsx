@@ -35,9 +35,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full py-6 lg:px-16 sm:px-12 flex justify-between items-center z-50 bg-light shadow-md">
+    <nav className="fixed top-0 left-0 w-full py-6 lg:px-16 sm:px-12 flex justify-between items-center z-50">
       <div
-        className="text-4xl font-extrabold text-green cursor-pointer font-logo-family text-stroke text-shadow-bottom"
+        className={`text-4xl font-extrabold cursor-pointer font-logo-family text-stroke text-shadow-bottom transition-colors ${
+          active === "information" || active === "projects"
+            ? "text-light"
+            : "text-green"
+        }`}
         onClick={() => scrollToSection("introduction")}
       >
         GAMZE

@@ -1,39 +1,15 @@
-const projects = [
-  {
-    id: 1,
-    title: "Portfolio Website",
-    description:
-      "A modern, responsive portfolio built with React, Tailwind CSS, and Vite.",
-    tags: ["React", "Tailwind", "Vite"],
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "UI Components Library",
-    description:
-      "Reusable, elegant components focused on accessibility and performance.",
-    tags: ["TypeScript", "Design Systems"],
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Data Dashboard",
-    description:
-      "Interactive charts and insights with clean architecture and API-driven data.",
-    tags: ["React", "Charts", "API"],
-    link: "#",
-  },
-];
+import CustomButton from "./CustomButton";
+import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="min-h-screen md:h-screen w-full md:snap-start bg-green flex flex-col items-center relative py-20"
+      className="min-h-screen md:h-screen w-full md:snap-start bg-green flex flex-col items-center relative py-28"
     >
       <div className="container px-6 md:px-20">
         <h2 className="text-3xl md:text-5xl font-bold text-dark mb-8 text-center font-primary-family">
-          Projects
+          My Projects
         </h2>
         <p className="text-dark/80 text-sm md:text-base text-center mb-10 max-w-2xl mx-auto font-primary-family">
           Selected work that reflects my focus on clarity, performance, and
@@ -54,7 +30,7 @@ const Projects = () => {
               <p className="text-dark/80 text-sm md:text-base leading-relaxed mt-3 font-content-family">
                 {p.description}
               </p>
-              <div className="flex flex-wrap gap-2 mt-4 font-content-family">
+              <div className="flex flex-wrap gap-2 mt-4 font-content-family mb-6">
                 {p.tags.map((t) => (
                   <span
                     key={t}
@@ -64,14 +40,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="mt-6">
-                <a
-                  href={p.link}
-                  className="inline-block bg-dark text-light px-4 py-2 rounded-md hover:bg-orange hover:text-dark transition-colors font-primary-family"
-                >
-                  View Project
-                </a>
-              </div>
+              <CustomButton text="View Project" link={p.link} />
             </div>
           ))}
         </div>
