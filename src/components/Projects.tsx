@@ -8,8 +8,9 @@ const Projects = () => {
       <div className="container px-6 md:px-16">
         <h2 className="section-title">My Projects</h2>
         <p className="section-subtitle">
-          Selected work that reflects my focus on clarity, performance, and
-          thoughtful user experience.
+          Projects created to deepen technical capability, with more to come.
+          Current work includes Next.js applications, TDD-focused examples, and
+          a language-model project from an internship.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {projects.map((p) => (

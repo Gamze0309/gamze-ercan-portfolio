@@ -5,9 +5,8 @@
 
 export const config = {
   contact: {
-    email: import.meta.env.VITE_EMAIL || "gamze@example.com",
     linkedinUrl:
-      import.meta.env.VITE_LINKEDIN_URL || "https://linkedin.com/in/gamze",
+      import.meta.env.VITE_LINKEDIN_URL || "https://linkedin.com/in/gamze-ipek",
     githubUrl:
       import.meta.env.VITE_GITHUB_URL || "https://github.com/Gamze0309",
   },

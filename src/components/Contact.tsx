@@ -62,7 +62,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="text-orange font-bold hover:underline"
             >
-              linkedin.com/in/gamze
+              linkedin.com/in/gamze-ipek
             </a>
           </p>
           <p className="card-text mt-2">

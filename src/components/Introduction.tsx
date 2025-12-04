@@ -3,7 +3,12 @@ import Lottie from "lottie-react";
 import animationData from "../assets/developer.json";
 import { ROLE_ROTATION_INTERVAL, SECTION_IDS } from "../constants";
 
-const ROLES = ["UI Enthusiast", "Problem Solver", "Developer"];
+const ROLES = [
+  "UI Enthusiast",
+  "Problem Solver",
+  "Principled Coder",
+  "Team Player",
+];
 
 const Introduction = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -28,12 +33,9 @@ const Introduction = () => {
         />
       </div>
       <div className="w-full md:w-2/3 flex-1 md:h-full bg-light flex flex-col justify-center px-6 sm:px-4 lg:px-12 gap-6 md:overflow-hidden md:pt-12">
-        <p className="text-green font-bold text-lg md:text-xl">
-          Hi, I am Gamze 👋
-        </p>
         <h1 className="text-dark font-bold text-lg md:text-5xl sm:text-2xl leading-tight">
-          Software engineer building scalable, maintainable applications focused
-          on clean architecture and high‑reliability systems.
+          Gamze - Software engineer focused on clean execution, predictable
+          behavior, and reliable results.
         </h1>
         <p className="text-dark font-bold text-sm md:text-base mt-8">
           Frontend Developer • Full-Stack Developer • React • Next.js •

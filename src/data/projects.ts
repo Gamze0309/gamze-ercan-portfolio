@@ -3,26 +3,26 @@ import type { Project } from "../types";
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Poké Atlas",
     description:
-      "A modern, responsive portfolio built with React, Tailwind CSS, and Vite.",
-    tags: ["React", "Tailwind", "Vite"],
-    link: "#",
+      "Poké Atlas allows users to explore detailed Pokémon information (including abilities, evolution chains, and stats) through a clean, responsive, and automated development workflow.",
+    tags: ["Next", "Redux Toolkit", "React Bootstrap"],
+    link: "https://poke-atlas-ruddy.vercel.app/",
   },
   {
     id: 2,
     title: "UI Components Library",
     description:
-      "Reusable, elegant components focused on accessibility and performance.",
-    tags: ["TypeScript", "Design Systems"],
-    link: "#",
+      "It's Sundaes order project writen with test driven development.",
+    tags: ["JavaScript", "Jest", "React Testing Library", "React Bootstrap"],
+    link: "https://github.com/Gamze0309/Sundaes-on-demand",
   },
   {
     id: 3,
-    title: "Data Dashboard",
+    title: "Language Model are Open Knowledge Graphs for Turkish",
     description:
-      "Interactive charts and insights with clean architecture and API-driven data.",
-    tags: ["React", "Charts", "API"],
-    link: "#",
+      "Worked on transforming Turkish language data into an open knowledge graph by extracting entities and relationships from text. ",
+    tags: ["Python"],
+    link: "https://github.com/Gamze0309/language-models-are-knowledge-graph",
   },
 ];

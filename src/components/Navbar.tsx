@@ -82,7 +82,12 @@ const Navbar = () => {
                   ? "hover:text-light"
                   : "hover:text-orange"
               } transition-colors ${
-                active === item.id ? "border-b-2 border-orange" : ""
+                active === item.id
+                  ? active === SECTION_IDS.INFORMATION ||
+                    active === SECTION_IDS.PROJECTS
+                    ? "border-b-2 border-light"
+                    : "border-b-2 border-orange"
+                  : ""
               }`}
             >
               {item.label}
