@@ -66,7 +66,7 @@ The portfolio uses a consistent color palette:
 
 ## 📧 Contact
 
-- **LinkedIn**: [linkedin.com/in/gamze-ipek](linkedin.com/in/gamze-ipek)
+- **LinkedIn**: [linkedin.com/in/gamze-ipek](http://linkedin.com/in/gamze-ipek)
 
 ---
 
