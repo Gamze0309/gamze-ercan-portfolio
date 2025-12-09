@@ -54,16 +54,6 @@ src/
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 🎨 Design System
-
-The portfolio uses a consistent color palette:
-
-- **Primary**: #B1C29E (Green)
-- **Secondary**: #F0A04B (Orange)
-- **Accent**: #FADA7A (Yellow)
-- **Dark**: #3B3838
-- **Light**: #FCE7C8
-
 ## 📧 Contact
 
 - **LinkedIn**: [linkedin.com/in/gamze-ipek](http://linkedin.com/in/gamze-ipek)
