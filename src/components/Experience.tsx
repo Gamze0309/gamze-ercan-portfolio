@@ -4,7 +4,7 @@ import { experiences } from "../data/experiences";
 const Experience = () => {
   return (
     <div id={SECTION_IDS.EXPERIENCE} className="section-container bg-light">
-      <div className="container px-6 md:px-16">
+      <div className="container lg:px-16">
         <h2 className="section-title">
           My Career Journey{" "}
           <span role="img" aria-label="rocket">

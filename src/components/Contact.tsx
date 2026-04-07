@@ -18,7 +18,7 @@ const Contact = () => {
           }
         }
       },
-      { threshold: ANIMATION_INTERSECTION_THRESHOLD }
+      { threshold: ANIMATION_INTERSECTION_THRESHOLD },
     );
 
     if (sectionRef.current) {

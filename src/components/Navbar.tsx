@@ -44,21 +44,25 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
-  const cvButton = (isMobile: boolean) => (
-    <a
-      href="/cv.pdf"
-      download="Gamze_Ercan_CV.pdf"
-      className={`bg-dark active:scale-95 transition-transform text-yellow rounded-lg font-bold hover:bg-orange hover:text-dark transition-colors duration-300 ${
-        isMobile ? "px-4 py-3 text-lg text-center" : "px-4 py-2 text-sm"
-      }`}
-      onClick={() => isMobile && setMenuOpen(false)}
-    >
-      📄 Download CV
-    </a>
-  );
+  const cvButton = (isMobile: boolean) => {
+    const pdfUrl = `${import.meta.env.BASE_URL}GamzeErcanCv.pdf`;
+    return (
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`bg-dark active:scale-95 transition-transform text-yellow rounded-lg font-bold hover:bg-orange hover:text-dark transition-colors duration-300 ${
+          isMobile ? "px-4 py-3 text-lg text-center" : "px-4 py-2 text-sm"
+        }`}
+        onClick={() => isMobile && setMenuOpen(false)}
+      >
+        📄 View CV
+      </a>
+    );
+  };
 
   return (
-    <nav className="fixed top-0 left-0 w-full py-6 px-12 md:px-16 flex justify-between items-center z-50 bg-light shadow-md md:bg-transparent md:shadow-none">
+    <nav className="fixed top-0 left-0 w-full py-6 px-10 md:px-14 flex justify-between items-center z-50 bg-light shadow-md md:bg-transparent md:shadow-none">
       <div
         className={`text-4xl font-extrabold cursor-pointer font-logo-family text-stroke text-shadow-bottom transition-colors text-green ${
           active === SECTION_IDS.INFORMATION || active === SECTION_IDS.PROJECTS

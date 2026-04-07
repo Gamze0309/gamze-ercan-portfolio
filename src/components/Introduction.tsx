@@ -38,8 +38,8 @@ const Introduction = () => {
           behavior, and reliable results.
         </h1>
         <p className="text-dark font-bold text-sm md:text-base mt-8">
-          Frontend Developer • Full-Stack Developer • React • Next.js •
-          JavaScript • TypeScript •{" "}
+          Frontend Developer • Full-Stack Developer • Java • Spring Boot • React
+          • Next.js • JavaScript • TypeScript •{" "}
           <span className="bg-dark text-yellow px-2 py-1 rounded">
             {ROLES[roleIndex]}
           </span>

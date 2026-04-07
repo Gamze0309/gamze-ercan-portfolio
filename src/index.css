@@ -31,7 +31,9 @@
     -webkit-text-stroke: 0.8px currentColor;
   }
   .text-shadow-strong {
-    text-shadow: 0 0 0.5px currentColor, 0 0 1px currentColor,
+    text-shadow:
+      0 0 0.5px currentColor,
+      0 0 1px currentColor,
       0 0 1.5px currentColor;
   }
   .text-shadow-bottom {
@@ -40,7 +42,7 @@
 
   /* Reusable component classes */
   .section-container {
-    @apply min-h-screen md:h-screen w-full md:snap-start flex flex-col items-center relative py-28;
+    @apply min-h-screen md:h-screen w-full md:snap-start flex flex-col items-center relative py-20 lg:py-28;
   }
 
   .card-base {
@@ -52,11 +54,11 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-5xl font-bold text-dark mb-8 text-center font-primary-family;
+    @apply text-3xl md:text-5xl font-bold text-dark mb-5 lg:mb-8 text-center font-primary-family;
   }
 
   .section-subtitle {
-    @apply text-dark/80 text-sm md:text-base text-center mb-10 max-w-2xl mx-auto font-primary-family;
+    @apply text-dark/80 text-base text-center mb-5 lg:mb-10 max-w-2xl mx-auto font-primary-family;
   }
 
   .card-title {
@@ -64,7 +66,7 @@
   }
 
   .card-text {
-    @apply text-dark/80 text-sm md:text-base leading-relaxed font-content-family;
+    @apply text-dark/80 text-sm leading-relaxed font-content-family;
   }
 
   .tag {
@@ -84,7 +86,7 @@
   }
 
   .info-subsection-text {
-    @apply text-dark/90 text-sm md:text-lg leading-relaxed font-content-family;
+    @apply text-dark/90 text-sm md:text-base leading-relaxed font-content-family;
   }
 
   .info-center-icon {

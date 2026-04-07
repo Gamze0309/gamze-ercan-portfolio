@@ -5,7 +5,7 @@ import { SECTION_IDS } from "../constants";
 const Projects = () => {
   return (
     <div id={SECTION_IDS.PROJECTS} className="section-container bg-green">
-      <div className="container px-6 md:px-16">
+      <div className="container lg:px-16">
         <h2 className="section-title">My Projects</h2>
         <p className="section-subtitle">
           Projects created to deepen technical capability, with more to come.

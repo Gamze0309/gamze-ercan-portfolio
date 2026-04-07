@@ -23,10 +23,10 @@ A modern, responsive portfolio website showcasing my work as a Software Engineer
 
 ```bash
 # Clone the repository
-git clone https://github.com/Gamze0309/Portfolio.git
+git clone https://github.com/Gamze0309/Gamze-Ercan-Portfolio.git
 
 # Navigate to project directory
-cd gamze-ercan-porfolio
+cd Gamze-Ercan-Portfolio
 
 # Install dependencies
 npm install
@@ -39,7 +39,7 @@ npm run dev
 
 ```
 src/
-├── components/       # React components
+├── components/      # React components
 ├── data/            # Static data (projects, experiences)
 ├── types/           # TypeScript type definitions
 ├── constants/       # Application constants
@@ -54,21 +54,9 @@ src/
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 🎨 Design System
-
-The portfolio uses a consistent color palette:
-
-- **Primary**: #B1C29E (Green)
-- **Secondary**: #F0A04B (Orange)
-- **Accent**: #FADA7A (Yellow)
-- **Dark**: #3B3838
-- **Light**: #FCE7C8
-
 ## 📧 Contact
 
-- **Email**: gamze@example.com
-- **LinkedIn**: [linkedin.com/in/gamze](https://linkedin.com/in/gamze)
-- **GitHub**: [github.com/Gamze0309](https://github.com/Gamze0309)
+- **LinkedIn**: [linkedin.com/in/gamze-ipek](http://linkedin.com/in/gamze-ipek)
 
 ---
 

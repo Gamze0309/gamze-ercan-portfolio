@@ -27,7 +27,7 @@ const Information = () => {
         ★
       </div>
 
-      <div className="container mx-auto px-6 md:px-16 relative z-10">
+      <div className="container mx-auto lg:px-16 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12">
           <div className="flex-1 text-center md:text-right space-y-2 md:space-y-4">
             <h2 className="info-subsection-title">UI Enthusiast</h2>
@@ -44,8 +44,8 @@ const Information = () => {
             <p className="info-subsection-text">
               Problem solver with a passion for coding since high school,
               tackling programming challenges with persistence and focus.
-              Committed to finding solutions, learning from mistakes, and
-              continuously improving results.
+              Committed to finding solutions, learning from mistakes and
+              continuously improving results through disciplined iteration.
             </p>
           </div>
         </div>
@@ -75,7 +75,8 @@ const Information = () => {
             <p className="info-subsection-text">
               Team player who collaborates closely with colleagues, offering
               support on challenges while learning from their expertise to
-              achieve shared goals.
+              achieve shared goals, and consistently contributes to a positive
+              and productive team environment.
             </p>
           </div>
         </div>
