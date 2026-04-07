@@ -11,10 +11,10 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "UI Components Library",
+    title: "Football World Cup Score Board Library",
     description:
-      "It's Sundaes order project writen with test driven development.",
-    tags: ["JavaScript", "Jest", "React Testing Library", "React Bootstrap"],
+      "A simple in-memory library for tracking live football match scores during the World Cup, built using a test-driven development (TDD) approach and following a layered architecture.",
+    tags: ["Java", "TDD"],
     link: "https://github.com/Gamze0309/Sundaes-on-demand",
   },
   {

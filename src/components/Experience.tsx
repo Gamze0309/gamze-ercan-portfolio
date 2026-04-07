@@ -14,8 +14,8 @@ const Experience = () => {
         <p className="section-subtitle">
           Professional experience includes internships during education, with a
           key one at Havelsan. Graduated from Karadeniz Technical University
-          with the second-highest GPA, then focused primarily on frontend
-          development, while gaining full-stack experience in the first role.
+          with the second-highest GPA, then focused primarily on full-stack
+          development.
           Experienced in Agile methodology and collaborative Git workflows.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
